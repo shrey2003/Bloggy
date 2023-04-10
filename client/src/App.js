@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { useCallback } from 'react';
+
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,7 +18,7 @@ import Single from "./pages/Single"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/test",
     element: <div>Hello world!</div>,
   },
   {
