@@ -3,15 +3,17 @@ $lightGreen: #b9e7e7;
 .app {
   display: flex;
   justify-content: center;
-  background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  // background-color: #0cbaba;
+  // background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-color: #5d4257;
+  background-image: linear-gradient(315deg, #5d4257 40%, #a5c7b7 74%);
   width: 100%;
   height: 100%;
 
   .container {
     width: 90vw;
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    // background-color: #0cbaba;
+    // background-image: linear-gradient(45deg, #0cbaba 40%, #380036 74%);
     
     .link {
       text-decoration: none;
