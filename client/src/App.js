@@ -1,21 +1,17 @@
-import logo from './logo.svg';
-import './style.scss';
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { useCallback } from 'react';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Outlet,
 } from "react-router-dom";
-import Register from "./pages/Register"
-import Home from "./pages/Home"
-import Login from "./pages/Login"
-import Write from "./pages/Write"
-import Single from "./pages/Single"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Write from "./pages/Write";
+import Home from "./pages/Home";
+import Single from "./pages/Single";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import "./style.scss"
 
 const Layout = () => {
   return (
@@ -55,7 +51,6 @@ const router = createBrowserRouter([
     element: <Login />,
   },
 ]);
-
 
 function App() {
   return (

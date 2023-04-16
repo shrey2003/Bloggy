@@ -1,8 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Register = () => {
-
   const [inputs, setInputs] = useState({
     username: "",
     email: "",
@@ -61,5 +62,4 @@ const Register = () => {
   );
 };
 
-
-export default Register
+export default Register;
