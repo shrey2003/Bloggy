@@ -51,6 +51,9 @@ const Home = () => {
     const doc = new DOMParser().parseFromString(html, "text/html")
     return doc.body.textContent
   }
+  
+  // const postDesc = getText(posts.desc).split('\n').slice(0, 4).join('\n');
+
 
 
   return (
@@ -65,7 +68,7 @@ const Home = () => {
               <Link className="link" to={`/post/${post.id}`}>
                 <h1>{post.title}</h1>
               </Link>
-              <p>{getText(post.desc)}</p>
+              <p>{getText(post.desc).split(' ').slice(0, 70).join(' ')}</p>
               <button>Read More</button>
             </div>
           </div>
